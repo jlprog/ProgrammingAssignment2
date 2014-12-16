@@ -7,10 +7,10 @@
 ## 4. get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-        x <- NULL
+        m <- NULL
         set <- function(y) {
-                x << y
-                m << NULL
+                x <<- y
+                m <<- NULL
         }
         get <- function() x
         setinverse <- function(solve) m <<- solve
